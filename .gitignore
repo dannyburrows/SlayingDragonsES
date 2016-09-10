@@ -1,7 +1,6 @@
+# Created by https://www.gitignore.io/api/visualstudio
 
-# Created by https://www.gitignore.io/api/visua,visualstudio
-
-#!! ERROR: visua is undefined. Use list command to see defined gitignore types !!#
+aws.config.json
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and

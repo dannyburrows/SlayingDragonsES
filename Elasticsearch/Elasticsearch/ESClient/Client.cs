@@ -135,6 +135,36 @@ namespace Elasticsearch.ESClient
             }
             return result;
         }
+
+        /// <summary>
+        /// Filters quests by geo distance
+        /// </summary>
+        /// <param name="radius">Filter radius</param>
+        /// <param name="latitude">Latitude to base search from</param>
+        /// <param name="longitude">Longitude to base search from</param>
+        /// <returns></returns>
+        public async Task< IEnumerable< Models.Quest > > FilterViaGeoDistance( double radius, double latitude, double longitude )
+        {
+            IEnumerable< Models.Quest > result = null;
+
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Query( q =>
+                    q.GeoDistance( gd =>
+                        gd.Field( f => f.CoordStart )
+                            .DistanceType( GeoDistanceType.Arc ) // 
+                            .Location( latitude, longitude )
+                            .Distance( radius, DistanceUnit.Miles ) )
+                ).Sort( so => so.GeoDistance( gd =>
+                    gd.Order( SortOrder.Ascending )
+                        .PinTo( new GeoLocation( latitude, longitude ) ) ) ) ); // pin the sort from the original search point
+
+            if ( response.Hits.Any( ) )
+            {
+                result = response.Hits.Select( h => h.Source );
+            }
+
+            return result;
+        }
         #endregion
 
         #region Treasure

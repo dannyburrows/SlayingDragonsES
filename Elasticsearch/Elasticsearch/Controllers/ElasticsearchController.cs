@@ -5,6 +5,7 @@ using System.Web.Http.Results;
 
 namespace Elasticsearch.Controllers
 {
+    [RoutePrefix(("v1/ES"))]
     public class ElasticsearchController : ApiController
     {
         /// <summary>
@@ -13,8 +14,11 @@ namespace Elasticsearch.Controllers
         /// <param name="query">String containing the search parameters</param>
         /// <returns></returns>
         [HttpGet]
+        [Route("Fuzzy")]
         public async Task< IHttpActionResult > SearchString( string query )
         {
+            var esClient = new ESClient.Client();
+
             return Ok( );
         }
 
@@ -25,6 +29,7 @@ namespace Elasticsearch.Controllers
         /// <param name="longitude"></param>
         /// <returns></returns>
         [HttpGet]
+        [Route("GeoDistance")]
         public async Task< IHttpActionResult > SearchGeoDistance( long latitude, long longitude )
         {
             return Ok( );

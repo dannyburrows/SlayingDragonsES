@@ -9,9 +9,9 @@ namespace Elasticsearch.ESClient
 {
     internal class AWSCredentials
     {
-        internal string Key { get; set; }
-        internal string Secret { get; set; }
-        internal string Region { get; set; }
+        public string Key { get; set; }
+        public string Secret { get; set; }
+        public string Region { get; set; }
     }
 
     public class Client
@@ -21,14 +21,12 @@ namespace Elasticsearch.ESClient
         public Client( )
         {
             AWSCredentials credentials;
-            using ( StreamReader jsonFile = File.OpenText( string.Format( @"{0}aws.config.json", AppDomain.CurrentDomain.BaseDirectory ) ) )
-            {
-                string json = jsonFile.ReadToEnd( );
-                credentials = JsonConvert.DeserializeObject< AWSCredentials >( json );
+            string json = File.ReadAllText( string.Format( @"{0}aws.config.json", AppDomain.CurrentDomain.BaseDirectory ) );
 
-                if (credentials == null) 
-                    throw new Exception("Whoops...");
-            }
+            credentials = JsonConvert.DeserializeObject< AWSCredentials >( json );
+                
+            if (credentials == null) 
+                throw new Exception("Whoops...");
 
             var httpConnection = new AwsHttpConnection(new AwsSettings
             {

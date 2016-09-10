@@ -116,7 +116,7 @@ namespace Elasticsearch.ESClient
         /// <param name="queryStart">Starting date</param>
         /// <param name="queryEnd">Ending date</param>
         /// <returns></returns>
-        public async Task< IEnumerable< Models.Quest > > FilterViaDateTime( DateTime queryStart, DateTime? queryEnd = null )
+        public async Task< IEnumerable< Models.Quest > > FilterQuestViaDateTime( DateTime queryStart, DateTime? queryEnd = null )
         {
             if ( queryEnd == null )
                 queryEnd = queryStart.AddDays( 7 );
@@ -143,7 +143,7 @@ namespace Elasticsearch.ESClient
         /// <param name="latitude">Latitude to base search from</param>
         /// <param name="longitude">Longitude to base search from</param>
         /// <returns></returns>
-        public async Task< IEnumerable< Models.Quest > > FilterViaGeoDistance( double radius, double latitude, double longitude )
+        public async Task< IEnumerable< Models.Quest > > FilterQuestViaGeoDistance( double radius, double latitude, double longitude )
         {
             IEnumerable< Models.Quest > result = null;
 
@@ -158,6 +158,34 @@ namespace Elasticsearch.ESClient
                     gd.Order( SortOrder.Ascending )
                         .PinTo( new GeoLocation( latitude, longitude ) ) ) ) ); // pin the sort from the original search point
 
+            if ( response.Hits.Any( ) )
+            {
+                result = response.Hits.Select( h => h.Source );
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Searches quests that have treasures that contain the teasure query
+        /// </summary>
+        /// <param name="treasureQuery">Search text</param>
+        /// <returns></returns>
+        public async Task< IEnumerable< Models.Quest > > SearchQuestViaTreasure( string treasureQuery )
+        {
+            IEnumerable< Models.Quest > result = null;
+
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Query( q =>
+                    q.Nested( n => // nested, we are going to be search on a nested proeprty field
+                        n.Path( p => p.Treasures ) // search through treasures, these are indexed separately internally
+                            .Query( q2 => // standard query from here
+                                q2.MultiMatch( mm =>
+                                    mm.Query( treasureQuery )
+                                        .Type( TextQueryType.BestFields )
+                                        .Fields( f2 =>
+                                            f2.Field( f3 => f3.Name, 10.00 ).Field( f3 => f3.Description, 2.00 ) )
+                                    ) ) ) ).Sort( so => so.Ascending( SortSpecialField.Score ) ) );
             if ( response.Hits.Any( ) )
             {
                 result = response.Hits.Select( h => h.Source );

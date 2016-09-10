@@ -47,6 +47,64 @@ namespace Elasticsearch.ESClient
             var pool = new SingleNodeConnectionPool( new Uri( "http://search-slayingdragons-rjkkghkxvgnzkzzcm6b4savkme.us-west-2.es.amazonaws.com" ) );
             var config = new ConnectionSettings( pool, httpConnection );
             _client = new ElasticClient( config );
+            // build indices and mappings
+            CreateQuestIndices( );
+            CreateTreasureIndices( );
+        }
+
+        /// <summary>
+        /// Creates the quest indices and creates the model mappings
+        /// </summary>
+        /// <returns></returns>
+        public bool CreateQuestIndices()
+        {
+            var exists = _client.IndexExists( "Quest" );
+            if ( !exists.Exists )
+            {
+                var indexResponse = _client.CreateIndex( "Quest" );
+                if ( indexResponse.Acknowledged )
+                {
+                    var mappingResponse = _client.Map< Models.Quest >( m => m.AutoMap( ).Index( "Quest" ) );
+                    if ( mappingResponse.Acknowledged )
+                        return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Creates the teasure indices and model mappings
+        /// </summary>
+        /// <returns></returns>
+        public bool CreateTreasureIndices( )
+        {
+            var exists = _client.IndexExists( "Treasure" );
+            if ( !exists.Exists )
+            {
+                var indexResponse = _client.CreateIndex( "Treasure" );
+                if ( indexResponse.Acknowledged )
+                {
+                    var mappingResponse = _client.Map< Models.Treasure >( m => m.AutoMap( ).Index( "Treasure" ) );
+                    if ( mappingResponse.Acknowledged )
+                        return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Makes a raw json query against the indices
+        /// </summary>
+        /// <param name="json"></param>
+        /// <returns></returns>
+        public async Task<object> Raw(string json)
+        {
+            var response = await _client.SearchAsync<object>(s => s
+             .AllIndices()
+             .AllTypes()
+             .Query(q => q.Raw(json)));
+
+            return response;
         }
 
         #region Quest
@@ -61,6 +119,7 @@ namespace Elasticsearch.ESClient
             IEnumerable< Models.Quest > result = null;
 
             var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Type("QuestSearchModel")
                 .Query( q =>
                     q.MultiMatch( mm =>
                         mm.Query( query )
@@ -89,6 +148,7 @@ namespace Elasticsearch.ESClient
             IEnumerable<Models.Quest> result = null;
 
             var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Type("QuestSearchModel")
                 .Query( q =>
                     q.FunctionScore( fs => // define our own specific function to score
                         fs.Query( q2 =>
@@ -123,6 +183,7 @@ namespace Elasticsearch.ESClient
 
             IEnumerable< Models.Quest > result = null;
             var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Type("QuestSearchModel")
                 .Query( q =>
                     q.DateRange( dr =>
                         dr.Field( f => f.BeginDate ) // the field being search
@@ -148,6 +209,7 @@ namespace Elasticsearch.ESClient
             IEnumerable< Models.Quest > result = null;
 
             var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Type("QuestSearchModel")
                 .Query( q =>
                     q.GeoDistance( gd =>
                         gd.Field( f => f.CoordStart )
@@ -176,6 +238,7 @@ namespace Elasticsearch.ESClient
             IEnumerable< Models.Quest > result = null;
 
             var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+                .Type("QuestSearchModel")
                 .Query( q =>
                     q.Nested( n => // nested, we are going to be search on a nested proeprty field
                         n.Path( p => p.Treasures ) // search through treasures, these are indexed separately internally
@@ -193,6 +256,18 @@ namespace Elasticsearch.ESClient
 
             return result;
         }
+
+        #region CRUD
+
+        public async Task< bool> Add( Models.Quest quest )
+        {
+            var response = await _client.IndexAsync( quest, idx => idx.Index( "Quest" ) );
+            
+            return response.Created;
+        }
+
+        #endregion
+
         #endregion
 
         #region Treasure
@@ -206,6 +281,7 @@ namespace Elasticsearch.ESClient
             IEnumerable<Models.Treasure> result = null;
 
             var response = await _client.SearchAsync< Models.Treasure >( s => s.Index( "Treasure" )
+                .Type( "TreasureSearchModel" )
                 .Query( q =>
                     q.MultiMatch( mm => // search multiple fields
                         mm.Query( query )
@@ -234,6 +310,7 @@ namespace Elasticsearch.ESClient
             IEnumerable< Models.Treasure > result = null;
 
             var response = await _client.SearchAsync< Models.Treasure >( s => s.Index( "Treasure" )
+                .Type( "TreasureSearchModel" )
                 .Query( q =>
                     q.FunctionScore( fs => // define our own specific function to score
                         fs.Query( q2 =>

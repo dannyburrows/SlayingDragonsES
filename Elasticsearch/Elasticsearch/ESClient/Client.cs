@@ -259,11 +259,44 @@ namespace Elasticsearch.ESClient
 
         #region CRUD
 
+        /// <summary>
+        /// Adds a document to the index
+        /// </summary>
+        /// <param name="quest">Quest object</param>
+        /// <returns></returns>
         public async Task< bool> Add( Models.Quest quest )
         {
             var response = await _client.IndexAsync( quest, idx => idx.Index( "Quest" ) );
             
             return response.Created;
+        }
+
+        /// <summary>
+        /// Updates existing document
+        /// </summary>
+        /// <param name="quest">Quest object</param>
+        /// <returns></returns>
+        public async Task< bool > Update( Models.Quest quest )
+        {
+            var response = await _client.UpdateAsync( new DocumentPath< Models.Quest >( quest ), u => u.Index( "Quest" ).Doc( quest ) );
+            if ( response.IsValid )
+                return true;
+
+            return false;
+        }
+
+        /// <summary>
+        /// Deletes existing document
+        /// </summary>
+        /// <param name="id">Guid for document</param>
+        /// <returns></returns>
+        public async Task< bool > Delete( Guid id )
+        {
+            var response = await _client.DeleteAsync< Models.Quest >( id );
+            if ( response.Found )
+                return true;
+
+            return false;
         }
 
         #endregion

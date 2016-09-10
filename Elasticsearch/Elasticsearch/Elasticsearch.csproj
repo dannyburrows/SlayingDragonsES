@@ -199,6 +199,10 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ElasticsearchController.cs" />
+    <Compile Include="Controllers\TreasureController.cs" />
+    <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\Quest.cs" />
+    <Compile Include="Entity\Treasure.cs" />
     <Compile Include="ESClient\Client.cs" />
     <Compile Include="ESClient\IClient.cs" />
     <Compile Include="Global.asax.cs">
@@ -249,6 +253,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

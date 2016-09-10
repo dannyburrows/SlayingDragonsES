@@ -10,6 +10,8 @@ namespace Elasticsearch.Models
         public Guid Id { get; set; }
         [String]
         public string Name { get; set; }
+        [String]
+        public string Description { get; set; }
         [Number(NumberType.Double)]
         public double Value { get; set; }
     }

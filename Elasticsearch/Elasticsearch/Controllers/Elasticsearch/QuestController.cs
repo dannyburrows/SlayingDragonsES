@@ -8,6 +8,8 @@ namespace Elasticsearch.Controllers
     [RoutePrefix(("v1/ES"))]
     public class ElasticsearchController : ApiController
     {
+
+        #region Search
         /// <summary>
         /// Searches the elasticsearch index by a query string
         /// </summary>
@@ -34,5 +36,9 @@ namespace Elasticsearch.Controllers
         {
             return Ok( );
         }
+        #endregion
+
+        #region CRUD
+        #endregion
     }
 }

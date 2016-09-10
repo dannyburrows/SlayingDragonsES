@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Elasticsearch.Entity;
 
-namespace Elasticsearch.Controllers
+namespace Elasticsearch.Controllers.Entity
 {
     [RoutePrefix("v1/Treasures")]
     public class TreasureController : ApiController
@@ -24,22 +22,34 @@ namespace Elasticsearch.Controllers
         [HttpGet]
         public async Task< IHttpActionResult > Search( string query )
         {
-            return Ok( );
-        }
+            List< Treasure > treasures = new List< Treasure >();
+            using ( var context = new Context( ) )
+            {
+                // really bad partial matching, here we go...
+                var matches = context.Treasures.Where( t => t.Name == query )
+                    .Union( context.Treasures.Where( t => t.Description == query ) );
+                if ( matches.Any( ) )
+                {
+                    treasures = matches.ToList( );
+                }
+                else
+                {
+                    // split the query by whitespace
+                    var queryParts = query.Split( ' ' );
+                    // test each part on each property that we want to test
+                    foreach ( var part in queryParts )
+                    {
+                        treasures.AddRange( context.Treasures.Where( t => t.Name.Contains( part ) )
+                            .Union( context.Treasures.Where( t => t.Description.Contains( part ) ) ) );
+                    }
+                    // remove duplicates
+                    treasures = treasures.GroupBy( t => t.Id ).Select( t => t.First( ) ).ToList( );
+                }
+            }
 
-        /// <summary>
-        /// Performs a search on treasures via latitude / longitude
-        /// </summary>
-        /// <param name="latitude">Latitude of point to search</param>
-        /// <param name="longitude">Longitude of point to search</param>
-        /// <param name="radius">Radius to search</param>
-        /// <returns></returns>
-        [Route("Geo")]
-        [HttpGet]
-        public async Task< IHttpActionResult > SearchGeoDistance( long latitude, long longitude, int radius )
-        {
-            return Ok();
+            return Ok( treasures );
         }
+        
         #endregion
 
         #region CRUD
@@ -55,7 +65,7 @@ namespace Elasticsearch.Controllers
         public async Task< IHttpActionResult > Get( Guid id )
         {
             Treasure treasure = null;
-            using ( var context = new Entity.Context( ) )
+            using ( var context = new Context( ) )
             {
                 treasure = await context.Treasures.FindAsync( id );
             }
@@ -73,11 +83,10 @@ namespace Elasticsearch.Controllers
         public async Task< IHttpActionResult > Query( )
         {
             List< Treasure > treasures;
-            using ( var context = new Entity.Context( ) )
+            using ( var context = new Context( ) )
             {
-                treasures = context.Treasures.ToList();
+                treasures = await context.Treasures.ToListAsync();
             }
-
             return Ok( treasures );
         }
 
@@ -89,14 +98,14 @@ namespace Elasticsearch.Controllers
         [HttpPost]
         [Route]
         [ResponseType(typeof(Treasure))]
-        public async Task< IHttpActionResult > Add( Entity.Treasure treasure )
+        public async Task< IHttpActionResult > Add( Treasure treasure )
         {
             if ( !ModelState.IsValid )
             {
                 return BadRequest( );
             }
 
-            using ( var context = new Entity.Context( ) )
+            using ( var context = new Context( ) )
             {
                 context.Treasures.Add( treasure );
                 await context.SaveChangesAsync( );
@@ -113,14 +122,14 @@ namespace Elasticsearch.Controllers
         [HttpPut]
         [Route]
         [ResponseType(typeof(Treasure))]
-        public async Task< IHttpActionResult > Update( Entity.Treasure treasure )
+        public async Task< IHttpActionResult > Update( Treasure treasure )
         {
             if ( !ModelState.IsValid )
             {
                 return BadRequest( );
             }
 
-            using ( var context = new Entity.Context( ) )
+            using ( var context = new Context( ) )
             {
                 context.Entry(treasure).State = EntityState.Modified;
 
@@ -139,7 +148,7 @@ namespace Elasticsearch.Controllers
         [Route("{Id}")]
         public async Task< IHttpActionResult > Delete( Guid id )
         {
-            using ( var context = new Entity.Context( ) )
+            using ( var context = new Context( ) )
             {
                 var deleteMe = await context.Treasures.FindAsync( id );
                 context.Treasures.Remove( deleteMe );

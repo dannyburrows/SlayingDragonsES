@@ -12,6 +12,8 @@ namespace Elasticsearch.Models
         public Guid Id { get; set; }
         [String]
         public string Name { get; set; }
+        [String]
+        public string Description { get; set; }
         [Date]
         public DateTime BeginDate { get; set; }
         [Date]

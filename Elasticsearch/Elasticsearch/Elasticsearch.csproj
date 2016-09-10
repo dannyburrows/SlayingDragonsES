@@ -198,8 +198,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\Elasticsearch\QuestController.cs" />
-    <Compile Include="Controllers\Elasticsearch\TreasureController.cs" />
+    <Compile Include="Controllers\Elasticsearch\ESQuestController.cs" />
+    <Compile Include="Controllers\Elasticsearch\ESTreasureController.cs" />
     <Compile Include="Controllers\Entity\TreasureController.cs" />
     <Compile Include="Entity\Context.cs" />
     <Compile Include="Entity\Quest.cs" />

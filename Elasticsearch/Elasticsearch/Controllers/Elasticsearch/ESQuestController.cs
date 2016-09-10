@@ -6,7 +6,7 @@ using System.Web.Http.Results;
 namespace Elasticsearch.Controllers
 {
     [RoutePrefix(("v1/ES"))]
-    public class ElasticsearchController : ApiController
+    public class ESQuestController : ApiController
     {
 
         #region Search

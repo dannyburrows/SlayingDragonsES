@@ -7,7 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Elasticsearch.Entity;
 
-namespace Elasticsearch.Controllers.Entity
+namespace Elasticsearch.Controllers
 {
     [RoutePrefix("v1/Treasures")]
     public class TreasureController : ApiController

@@ -19,7 +19,6 @@ namespace Elasticsearch
                     {
                         c.SingleApiVersion("v1", "Elasticsearch");
                         c.DescribeAllEnumsAsStrings(true);
-
                         c.GroupActionsBy(apiDesc => apiDesc.HttpMethod.ToString());
                         c.IncludeXmlComments(GetXmlCommentsPath());
                     })

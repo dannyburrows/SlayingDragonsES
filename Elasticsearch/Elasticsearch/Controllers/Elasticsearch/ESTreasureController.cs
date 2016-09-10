@@ -2,7 +2,7 @@
 
 namespace Elasticsearch.Controllers
 {
-    public class TreasureController : ApiController
+    public class ESTreasureController : ApiController
     {
         
     }

@@ -20,6 +20,7 @@ namespace Elasticsearch.Controllers
         /// </summary>
         /// <param name="query">Search parameter</param>
         /// <returns>Result with name or description that match / partially match the query</returns>
+        [Route("Search")]
         [HttpGet]
         public async Task< IHttpActionResult > Search( string query )
         {
@@ -33,6 +34,7 @@ namespace Elasticsearch.Controllers
         /// <param name="longitude">Longitude of point to search</param>
         /// <param name="radius">Radius to search</param>
         /// <returns></returns>
+        [Route("Geo")]
         [HttpGet]
         public async Task< IHttpActionResult > SearchGeoDistance( long latitude, long longitude, int radius )
         {
@@ -48,7 +50,7 @@ namespace Elasticsearch.Controllers
         /// <param name="id">ID for treasure</param>
         /// <returns></returns>
         [HttpGet]
-        [Route("{Id:guid}")]
+        [Route("{Id}")]
         [ResponseType(typeof(Treasure))]
         public async Task< IHttpActionResult > Get( Guid id )
         {
@@ -67,6 +69,7 @@ namespace Elasticsearch.Controllers
         /// <returns></returns>
         [HttpGet]
         [ResponseType(typeof(List<Treasure>))]
+        [Route]
         public async Task< IHttpActionResult > Query( )
         {
             List< Treasure > treasures;
@@ -84,6 +87,7 @@ namespace Elasticsearch.Controllers
         /// <param name="treasure">Treasure object</param>
         /// <returns></returns>
         [HttpPost]
+        [Route]
         [ResponseType(typeof(Treasure))]
         public async Task< IHttpActionResult > Add( Entity.Treasure treasure )
         {
@@ -107,6 +111,7 @@ namespace Elasticsearch.Controllers
         /// <param name="treasure">Treasure object</param>
         /// <returns></returns>
         [HttpPut]
+        [Route]
         [ResponseType(typeof(Treasure))]
         public async Task< IHttpActionResult > Update( Entity.Treasure treasure )
         {
@@ -131,7 +136,7 @@ namespace Elasticsearch.Controllers
         /// <param name="id">Guid for object</param>
         /// <returns></returns>        
         [HttpDelete]
-        [Route("{Guid:Id}")]
+        [Route("{Id}")]
         public async Task< IHttpActionResult > Delete( Guid id )
         {
             using ( var context = new Entity.Context( ) )

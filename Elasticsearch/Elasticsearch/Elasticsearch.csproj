@@ -208,6 +208,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609100526245_InitialCreate.cs" />
+    <Compile Include="Migrations\201609100526245_InitialCreate.Designer.cs">
+      <DependentUpon>201609100526245_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609100528595_AddAutoGenKeys.cs" />
+    <Compile Include="Migrations\201609100528595_AddAutoGenKeys.Designer.cs">
+      <DependentUpon>201609100528595_AddAutoGenKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609100533570_KeyGen.cs" />
+    <Compile Include="Migrations\201609100533570_KeyGen.Designer.cs">
+      <DependentUpon>201609100533570_KeyGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Geo.cs" />
     <Compile Include="Models\Quest.cs" />
     <Compile Include="Models\Treasure.cs" />
@@ -256,6 +269,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201609100526245_InitialCreate.resx">
+      <DependentUpon>201609100526245_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609100528595_AddAutoGenKeys.resx">
+      <DependentUpon>201609100528595_AddAutoGenKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609100533570_KeyGen.resx">
+      <DependentUpon>201609100533570_KeyGen.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

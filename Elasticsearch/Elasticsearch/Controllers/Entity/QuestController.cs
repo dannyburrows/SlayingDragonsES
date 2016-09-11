@@ -9,7 +9,7 @@ using Elasticsearch.Entity;
 
 namespace Elasticsearch.Controllers
 {
-    [RoutePrefix("v1/Quets")]
+    [RoutePrefix("v1/Quest")]
     public class QuestController : ApiController
     {
         #region Search
@@ -20,7 +20,8 @@ namespace Elasticsearch.Controllers
         /// <returns>Result with name or description that match / partially match the query</returns>
         [Route("Search")]
         [HttpGet]
-        public async Task< IHttpActionResult > Search( string query )
+        [ResponseType(typeof(List<Quest> ))]
+        public IHttpActionResult Search( string query )
         {
             List< Quest > quests = new List< Quest >();
             using ( var context = new Context( ) )
@@ -44,6 +45,54 @@ namespace Elasticsearch.Controllers
                     }
                     // remove duplicates
                     quests = quests.GroupBy( t => t.Id ).Select( t => t.First( ) ).ToList( );
+                }
+            }
+
+            return Ok( quests );
+        }
+
+        /// <summary>
+        /// Searches the quests than contain certain treasure types
+        /// </summary>
+        /// <param name="query">Search text</param>
+        /// <returns></returns>
+        [Route("Treasure")]
+        [HttpGet]
+        [ResponseType(typeof(List<Quest> ))]
+        public IHttpActionResult SearchViaTreasure( string query )
+        {
+            List<Quest> quests = new List< Quest >();
+            using ( var context = new Context( ) )
+            {
+                // start with children records, find exact matching treasures, then select quests that have a reference
+                var matches = context.Treasures // to the treaure
+                    .Include( t => t.Quests )
+                    .Where( t => t.Name == query )
+                    .SelectMany( t => t.Quests )
+                    .Union( context.Treasures
+                        .Include( t => t.Quests )
+                        .Where( t => t.Description == query )
+                        .SelectMany( t => t.Quests ) ); // select all quests that have this treasure
+                if ( matches.Any( ) )
+                {
+                    quests = matches.ToList( );
+                }
+                else
+                {
+                    // split the query by white space
+                    var queryParts = query.ToLower().Split( ' ' ); // remove casing
+                    foreach ( var part in queryParts )
+                    {
+                        quests.AddRange( context.Treasures
+                            .Include( t => t.Quests )
+                            .Where( t => t.Name.ToLower().Contains(part) )
+                            .SelectMany( t => t.Quests )
+                            .Union( context.Treasures
+                                .Include( t => t.Quests )
+                                .Where( t => t.Description.ToLower().Contains(part) )
+                                .SelectMany( t => t.Quests ) ) );
+                    }
+                    quests = quests.GroupBy(t => t.Id).Select(t => t.First()).ToList();
                 }
             }
 

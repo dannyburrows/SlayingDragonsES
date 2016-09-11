@@ -281,7 +281,7 @@ namespace Elasticsearch.ESClient
         /// <returns></returns>
         public async Task< bool > Delete( Guid id )
         {
-            var response = await _client.DeleteAsync< Models.Quest >( id );
+            var response = await _client.DeleteAsync< Models.Quest >( DocumentPath< Models.Quest >.Id( id ), d => d.Index("quest") );
             if ( response.Found )
                 return true;
 

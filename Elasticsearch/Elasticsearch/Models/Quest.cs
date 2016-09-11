@@ -24,8 +24,13 @@ namespace Elasticsearch.Models
         public Geo CoordEnd { get; set; }
         [Nested(IncludeInParent = true)]
         public List<Treasure> Treasures { get; set; }
+
         [Boolean]
-        public bool HasTreasure => Treasures.Any( );
+        public bool HasTreasure
+        {
+            get { return Treasures != null && Treasures.Any( ) ; }
+        }
+
         [Number(NumberType.Integer, Coerce = true)]
         public int Difficulty { get; set; }
     }

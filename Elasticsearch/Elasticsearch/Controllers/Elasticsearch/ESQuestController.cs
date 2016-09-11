@@ -9,6 +9,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http.Description;
+using Nest;
 using WebGrease.Css.Extensions;
 
 namespace Elasticsearch.Controllers
@@ -168,6 +169,48 @@ namespace Elasticsearch.Controllers
                 }
             }
             return Ok( success );
+        }
+
+        [HttpPost]
+        [Route( )]
+        [ResponseType(typeof(bool))]
+        public async Task< IHttpActionResult > Post( Models.Quest quest )
+        {
+            if ( !ModelState.IsValid )
+                return BadRequest( );
+
+            if ( quest.Id == Guid.Empty )
+                quest.Id = Guid.NewGuid( );
+
+            var esClient = new ESClient.Client();
+            var result = await esClient.Add( quest );
+
+            return Ok( result );
+        }
+
+        [HttpPut]
+        [Route()]
+        [ResponseType(typeof(bool))]
+        public async Task<IHttpActionResult> Put(Models.Quest quest)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var esClient = new ESClient.Client( );
+            var result = await esClient.Update( quest );
+
+            return Ok( result );
+        }
+
+        [HttpDelete]
+        [Route()]
+        [ResponseType(typeof(bool))]
+        public async Task<IHttpActionResult> Delete(Guid id)
+        {
+            var esClient = new ESClient.Client( );
+            var result = await esClient.Delete( id );
+
+            return Ok( result );
         }
 
         #endregion

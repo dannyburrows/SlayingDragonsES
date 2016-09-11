@@ -9,6 +9,7 @@ using Elasticsearch.Entity;
 
 namespace Elasticsearch.Controllers
 {
+    [ControllerName("Entity")]
     [RoutePrefix("v1/Treasures")]
     public class TreasureController : ApiController
     {

@@ -14,6 +14,7 @@ using WebGrease.Css.Extensions;
 
 namespace Elasticsearch.Controllers
 {
+    [ControllerName("Elasticsearch")]
     [RoutePrefix(("v1/ES/Quest"))]
     public class ESQuestController : ApiController
     {

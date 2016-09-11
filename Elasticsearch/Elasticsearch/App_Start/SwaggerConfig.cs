@@ -3,6 +3,7 @@ using WebActivatorEx;
 using Elasticsearch;
 using Swashbuckle.Application;
 using System;
+using System.Linq;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -19,7 +20,7 @@ namespace Elasticsearch
                     {
                         c.SingleApiVersion("v1", "Elasticsearch");
                         c.DescribeAllEnumsAsStrings(true);
-                        c.GroupActionsBy(apiDesc => apiDesc.HttpMethod.ToString());
+                        c.GroupActionsBy(apiDesc => apiDesc.ActionDescriptor.ControllerDescriptor.GetCustomAttributes<ControllerNameAttribute>().Select(n => n.Name).FirstOrDefault());
                         c.IncludeXmlComments(GetXmlCommentsPath());
                         c.UseFullTypeNameInSchemaIds( );
                     })

@@ -49,7 +49,7 @@ namespace Elasticsearch.Controllers
                 }
             }
 
-            return Ok( quests );
+            return Ok( new { count = quests.Count(), data = quests } );
         }
 
         /// <summary>
@@ -97,9 +97,9 @@ namespace Elasticsearch.Controllers
                 }
             }
 
-            return Ok( quests );
+            return Ok(new { count = quests.Count(), data = quests });
         }
-        
+
         #endregion
 
         #region CRUD
@@ -117,7 +117,7 @@ namespace Elasticsearch.Controllers
             Quest quest = null;
             using ( var context = new Context( ) )
             {
-                quest = await context.Quests.FindAsync( id );
+                quest = await context.Quests.Include(q => q.Treasures).FirstOrDefaultAsync( q => q.Id == id );
             }
 
             return Ok( quest );
@@ -135,7 +135,7 @@ namespace Elasticsearch.Controllers
             List< Quest > quests;
             using ( var context = new Context( ) )
             {
-                quests = await context.Quests.ToListAsync();
+                quests = await context.Quests.Include( q => q.Treasures).ToListAsync();
             }
             return Ok( quests );
         }

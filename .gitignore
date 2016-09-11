@@ -1,6 +1,8 @@
 # Created by https://www.gitignore.io/api/visualstudio
 
 aws.config.json
+mapping.json
+quest_migrate.conf
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and

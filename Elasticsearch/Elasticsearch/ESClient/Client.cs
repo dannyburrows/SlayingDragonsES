@@ -190,18 +190,22 @@ namespace Elasticsearch.ESClient
             IEnumerable< Models.Quest > result = null;
 
             var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "quest" )
-                .Type("QuestSearchModel")
-                .Size(1000) // ignore default of 10
+                .Type( "QuestSearchModel" )
+                .Size( 1000 ) // ignore default of 10
                 .Query( q =>
                     q.GeoDistance( gd =>
                         gd.Field( f => f.CoordStart )
                             .DistanceType( GeoDistanceType.Arc ) // 
                             .Location( latitude, longitude )
                             .Distance( radius, DistanceUnit.Miles ) )
-                ).Sort( so => so.GeoDistance( gd =>
-                    gd.Order( SortOrder.Ascending )
-                        .PinTo( new GeoLocation( latitude, longitude ) ) ) ) ); // pin the sort from the original search point
-
+                )
+                .Sort( sort => sort
+                    .GeoDistance( g => g
+                        .Field( f => f.CoordStart )
+                        .Order( SortOrder.Ascending )
+                        .PinTo( new GeoLocation( latitude, longitude ) )
+                        .DistanceType( GeoDistanceType.SloppyArc ) ) )
+                );
             if ( response.Hits.Any( ) )
             {
                 result = response.Hits.Select( h => h.Source );

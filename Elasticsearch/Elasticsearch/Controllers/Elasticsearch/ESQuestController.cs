@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Controllers;
@@ -7,6 +8,7 @@ using Elasticsearch.Entity;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using System.Web.Http.Description;
 using WebGrease.Css.Extensions;
 
 namespace Elasticsearch.Controllers
@@ -50,23 +52,50 @@ namespace Elasticsearch.Controllers
 
             var results = await esClient.SearchQueryViaQuery(query);
             if (results == null)
-            {
                 return NotFound( );
-            }
+
             return Ok(new { count = results.Count(), data = results });
         }
 
         /// <summary>
         /// Searches the index by latitude and longitude
         /// </summary>
-        /// <param name="latitude"></param>
-        /// <param name="longitude"></param>
+        /// <param name="latitude">Latitude to pin query to</param>
+        /// <param name="longitude">Longitude to pin query to</param>
+        /// <param name="radius">Radius to search</param>
         /// <returns></returns>
         [HttpGet]
         [Route("GeoDistance")]
-        public async Task< IHttpActionResult > SearchGeoDistance( long latitude, long longitude )
+        [ResponseType(typeof(IEnumerable<Models.Quest>))]
+        public async Task< IHttpActionResult > SearchGeoDistance( long latitude, long longitude, int radius )
         {
-            return Ok( );
+            var esClient = new ESClient.Client();
+
+            var results = await esClient.FilterQuestViaGeoDistance( radius, latitude, longitude );
+            if ( results == null )
+                return NotFound( );
+
+            return Ok( new {count = results.Count( ), data = results} );
+        }
+
+        /// <summary>
+        /// Seearches the index by date range, returning quests that start within the date range
+        /// </summary>
+        /// <param name="start">Earliest date it can start</param>
+        /// <param name="end">Latest date it can start</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("DateRange")]
+        [ResponseType(typeof(IEnumerable<Models.Quest> ))]
+        public async Task< IHttpActionResult > SearchDateRange( DateTime start, DateTime end )
+        {
+            var esClient = new ESClient.Client();
+
+            var results = await esClient.FilterQuestViaDateTime( start, end );
+            if ( results == null )
+                return NotFound( );
+
+            return Ok( new {count = results.Count( ), data = results} );
         }
         #endregion
 
@@ -87,13 +116,13 @@ namespace Elasticsearch.Controllers
                         BeginDate = q.BeginDate,
                         CoordEnd = new Models.Geo
                         {
-                            Latitude = q.EndLat,
-                            Longitude = q.EndLong
+                            Lat = q.EndLat,
+                            Lon = q.EndLong
                         },
                         CoordStart = new Models.Geo
                         {
-                            Latitude = q.StartLat,
-                            Longitude = q.StartLong
+                            Lat = q.StartLat,
+                            Lon = q.StartLong
                         },
                         Description = q.Description,
                         Difficulty = q.Difficulty,

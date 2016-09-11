@@ -171,6 +171,11 @@ namespace Elasticsearch.Controllers
             return Ok( success );
         }
 
+        /// <summary>
+        /// Adds a new document to the index
+        /// </summary>
+        /// <param name="quest">Quest object</param>
+        /// <returns></returns>
         [HttpPost]
         [Route( )]
         [ResponseType(typeof(bool))]
@@ -188,6 +193,11 @@ namespace Elasticsearch.Controllers
             return Ok( result );
         }
 
+        /// <summary>
+        /// Updates a specific document in the index
+        /// </summary>
+        /// <param name="quest">Quest object</param>
+        /// <returns></returns>
         [HttpPut]
         [Route()]
         [ResponseType(typeof(bool))]
@@ -202,6 +212,11 @@ namespace Elasticsearch.Controllers
             return Ok( result );
         }
 
+        /// <summary>
+        /// Deletes a document from the index
+        /// </summary>
+        /// <param name="id">Guid for the document</param>
+        /// <returns></returns>
         [HttpDelete]
         [Route()]
         [ResponseType(typeof(bool))]
@@ -209,6 +224,26 @@ namespace Elasticsearch.Controllers
         {
             var esClient = new ESClient.Client( );
             var result = await esClient.Delete( id );
+
+            return Ok( result );
+        }
+
+        /// <summary>
+        /// Searches the index with a raw json query
+        /// </summary>
+        /// <param name="json">Json search body</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("Raw")]
+        [ResponseType(typeof(IEnumerable<Models.Quest> ))]
+        public async Task< IHttpActionResult > Raw( string json )
+        {
+            var esClient = new ESClient.Client();
+
+            var result = await esClient.Raw( json );
+
+            if ( result == null )
+                return NotFound( );
 
             return Ok( result );
         }

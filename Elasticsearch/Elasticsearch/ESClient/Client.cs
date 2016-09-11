@@ -77,14 +77,17 @@ namespace Elasticsearch.ESClient
         /// </summary>
         /// <param name="json"></param>
         /// <returns></returns>
-        public async Task<object> Raw(string json)
+        public async Task<IEnumerable<Models.Quest>> Raw(string json)
         {
-            var response = await _client.SearchAsync<object>(s => s
+            var response = await _client.SearchAsync<Models.Quest>(s => s
              .AllIndices()
-             .AllTypes()
+             .Type("QuestSearchModel")
              .Query(q => q.Raw(json)));
 
-            return response;
+            if ( response.Hits.Any( ) )
+                return response.Hits.Select( h => h.Source );
+
+            return null;
         }
 
         #region Quest
@@ -111,9 +114,7 @@ namespace Elasticsearch.ESClient
                 .Sort( s2 => s2.Descending( SortSpecialField.Score ) ) );
 
             if ( response.Hits.Any( ) )
-            {
                 result = response.Hits.Select( h => h.Source );
-            }
 
             return result;
         }
@@ -143,9 +144,7 @@ namespace Elasticsearch.ESClient
                 .Sort( s2 => s2.Descending( SortSpecialField.Score ) ) );
 
             if (response.Hits.Any())
-            {
                 result = response.Hits.Select(h => h.Source);
-            }
 
             return result;
         }
@@ -172,9 +171,7 @@ namespace Elasticsearch.ESClient
                             .LessThanOrEquals( queryEnd ) ) )
                 .Sort( so => so.Ascending( a => a.BeginDate ) ) ); // sort by soonest
             if ( response.Hits.Any( ) )
-            {
                 result = response.Hits.Select( h => h.Source );
-            }
             return result;
         }
 
@@ -207,9 +204,7 @@ namespace Elasticsearch.ESClient
                         .DistanceType( GeoDistanceType.SloppyArc ) ) )
                 );
             if ( response.Hits.Any( ) )
-            {
                 result = response.Hits.Select( h => h.Source );
-            }
 
             return result;
         }
@@ -239,9 +234,7 @@ namespace Elasticsearch.ESClient
                                             )
                                     ) ) ) ).Sort( so => so.Ascending( SortSpecialField.Score ) ) );
             if ( response.Hits.Any( ) )
-            {
                 result = response.Hits.Select( h => h.Source );
-            }
 
             return result;
         }

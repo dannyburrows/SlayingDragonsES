@@ -4,7 +4,7 @@ namespace Elasticsearch.Entity
 {
     public class Context : DbContext
     {
-        public Context( )
+        public Context( ) : base("name=DefaultConnection")
         {
             this.Configuration.ProxyCreationEnabled = false;
         }

@@ -16,6 +16,7 @@ namespace Elasticsearch.ESClient
         public string Key { get; set; }
         public string Secret { get; set; }
         public string Region { get; set; }
+        public string Uri { get; set; }
     }
 
     public class Client
@@ -44,47 +45,26 @@ namespace Elasticsearch.ESClient
 
 
             // create uri and connect to the service
-            var pool = new SingleNodeConnectionPool( new Uri( "http://search-slayingdragons-rjkkghkxvgnzkzzcm6b4savkme.us-west-2.es.amazonaws.com" ) );
+            var pool = new SingleNodeConnectionPool( new Uri( credentials.Uri ) );
             var config = new ConnectionSettings( pool, httpConnection );
             _client = new ElasticClient( config );
             // build indices and mappings
             CreateQuestIndices( );
-            CreateTreasureIndices( );
         }
 
         /// <summary>
         /// Creates the quest indices and creates the model mappings
         /// </summary>
         /// <returns></returns>
-        public bool CreateQuestIndices()
+        private bool CreateQuestIndices()
         {
-            var exists = _client.IndexExists( "Quest" );
+            var exists = _client.IndexExists( "quest" );
             if ( !exists.Exists )
             {
-                var indexResponse = _client.CreateIndex( "Quest" );
+                var indexResponse = _client.CreateIndex( "quest" );
                 if ( indexResponse.Acknowledged )
                 {
-                    var mappingResponse = _client.Map< Models.Quest >( m => m.AutoMap( ).Index( "Quest" ) );
-                    if ( mappingResponse.Acknowledged )
-                        return true;
-                }
-            }
-            return false;
-        }
-
-        /// <summary>
-        /// Creates the teasure indices and model mappings
-        /// </summary>
-        /// <returns></returns>
-        public bool CreateTreasureIndices( )
-        {
-            var exists = _client.IndexExists( "Treasure" );
-            if ( !exists.Exists )
-            {
-                var indexResponse = _client.CreateIndex( "Treasure" );
-                if ( indexResponse.Acknowledged )
-                {
-                    var mappingResponse = _client.Map< Models.Treasure >( m => m.AutoMap( ).Index( "Treasure" ) );
+                    var mappingResponse = _client.Map< Models.Quest >( m => m.AutoMap( ).Index( "quest" ) );
                     if ( mappingResponse.Acknowledged )
                         return true;
                 }
@@ -118,8 +98,9 @@ namespace Elasticsearch.ESClient
         {
             IEnumerable< Models.Quest > result = null;
 
-            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "quest" )
                 .Type("QuestSearchModel")
+                .Size(1000) // ignore default of 10
                 .Query( q =>
                     q.MultiMatch( mm =>
                         mm.Query( query )
@@ -147,19 +128,18 @@ namespace Elasticsearch.ESClient
         {
             IEnumerable<Models.Quest> result = null;
 
-            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
-                .Type("QuestSearchModel")
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "quest" )
+                .Type( "QuestSearchModel" )
+                .Size(1000) // ignore default of 10
                 .Query( q =>
-                    q.FunctionScore( fs => // define our own specific function to score
-                        fs.Query( q2 =>
-                            q2.MultiMatch( mm => // search on multiple fields
-                                mm.Query( query )
-                                    .Type( TextQueryType.BestFields )
-                                    .Fields( f =>
-                                        f.Field( f2 => f2.Name, 10.00 ) // Set the field and the boost
-                                            .Field( f2 => f2.Description, 2.00 ) // higher boost means higher score
-                                    ).Fuzziness( Fuzziness.EditDistance( fuzzy ) ) // controls amount of fuzzy
-                                ) ) ) )
+                    q.MultiMatch( mm => // search on multiple fields
+                        mm.Query( query )
+                            .Type( TextQueryType.BestFields )
+                            .Fields( f =>
+                                f.Field( f2 => f2.Name, 2.00 ) // Set the field and the boost
+                                    .Field( f2 => f2.Description, 1.00 ) // higher boost means higher score
+                            ).Fuzziness( Fuzziness.EditDistance( fuzzy ) ) // controls amount of fuzzy
+                        ) )
                 .Sort( s2 => s2.Descending( SortSpecialField.Score ) ) );
 
             if (response.Hits.Any())
@@ -182,8 +162,9 @@ namespace Elasticsearch.ESClient
                 queryEnd = queryStart.AddDays( 7 );
 
             IEnumerable< Models.Quest > result = null;
-            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "quest" )
                 .Type("QuestSearchModel")
+                .Size(1000) // ignore default of 10
                 .Query( q =>
                     q.DateRange( dr =>
                         dr.Field( f => f.BeginDate ) // the field being search
@@ -208,8 +189,9 @@ namespace Elasticsearch.ESClient
         {
             IEnumerable< Models.Quest > result = null;
 
-            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "quest" )
                 .Type("QuestSearchModel")
+                .Size(1000) // ignore default of 10
                 .Query( q =>
                     q.GeoDistance( gd =>
                         gd.Field( f => f.CoordStart )
@@ -237,8 +219,9 @@ namespace Elasticsearch.ESClient
         {
             IEnumerable< Models.Quest > result = null;
 
-            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "Quest" )
+            var response = await _client.SearchAsync< Models.Quest >( s => s.Index( "quest" )
                 .Type("QuestSearchModel")
+                .Size(1000) // ignore default of 10
                 .Query( q =>
                     q.Nested( n => // nested, we are going to be search on a nested proeprty field
                         n.Path( p => p.Treasures ) // search through treasures, these are indexed separately internally
@@ -266,7 +249,7 @@ namespace Elasticsearch.ESClient
         /// <returns></returns>
         public async Task< bool> Add( Models.Quest quest )
         {
-            var response = await _client.IndexAsync( quest, idx => idx.Index( "Quest" ) );
+            var response = await _client.IndexAsync( quest, idx => idx.Index( "quest" ) );
             
             return response.Created;
         }
@@ -278,7 +261,7 @@ namespace Elasticsearch.ESClient
         /// <returns></returns>
         public async Task< bool > Update( Models.Quest quest )
         {
-            var response = await _client.UpdateAsync( new DocumentPath< Models.Quest >( quest ), u => u.Index( "Quest" ).Doc( quest ) );
+            var response = await _client.UpdateAsync( new DocumentPath< Models.Quest >( quest ), u => u.Index( "quest" ).Doc( quest ) );
             if ( response.IsValid )
                 return true;
 
@@ -301,68 +284,6 @@ namespace Elasticsearch.ESClient
 
         #endregion
 
-        #endregion
-
-        #region Treasure
-        /// <summary>
-        /// Searches the treasures via standard query
-        /// </summary>
-        /// <param name="query">Search text</param>
-        /// <returns></returns>
-        public async Task< IEnumerable< Models.Treasure > > SearchTreasureViaQuery( string query )
-        {
-            IEnumerable<Models.Treasure> result = null;
-
-            var response = await _client.SearchAsync< Models.Treasure >( s => s.Index( "Treasure" )
-                .Type( "TreasureSearchModel" )
-                .Query( q =>
-                    q.MultiMatch( mm => // search multiple fields
-                        mm.Query( query )
-                            .Type( TextQueryType.BestFields )
-                            .Fields( f =>
-                                f.Fields( f2 => f2.Name, f2 => f2.Description, f2 => f2.Value ) // each field we want to search
-                            ) ) )
-                .Sort( s2 => s2.Descending( SortSpecialField.Score ) ) ); // ensure best scores are bubbled to the top
-
-            if ( response.Hits.Any( ) )
-            {
-                result = response.Hits.Select( h => h.Source );
-            }
-
-            return result;
-        }
-
-        /// <summary>
-        /// Searches the treasure index via fuzzy search, with an emphasis on name matching
-        /// </summary>
-        /// <param name="query">Search text</param>
-        /// <param name="fuzzy">Fuzziness index</param>
-        /// <returns></returns>
-        public async Task<IEnumerable<Models.Treasure>> SearchTreasureViaQueryFuzzy( string query, int fuzzy = 3 )
-        {
-            IEnumerable< Models.Treasure > result = null;
-
-            var response = await _client.SearchAsync< Models.Treasure >( s => s.Index( "Treasure" )
-                .Type( "TreasureSearchModel" )
-                .Query( q =>
-                    q.FunctionScore( fs => // define our own specific function to score
-                        fs.Query( q2 =>
-                            q2.MultiMatch( mm => // search on multiple fields
-                                mm.Query( query )
-                                    .Type( TextQueryType.BestFields )
-                                    .Fields( f =>
-                                        f.Field( f2 => f2.Name, 5.00 ) // Set the field and the boost
-                                            .Field( f2 => f2.Description, 2.00 ) // higher boost means higher score
-                                            .Field( f2 => f2.Value, 1.00 )
-                                    ).Fuzziness( Fuzziness.EditDistance( fuzzy ) ) // controls amount of fuzzy
-                                ) ) ) )
-                .Sort( s2 => s2.Descending( SortSpecialField.Score ) ) );
-            if ( response.Hits.Any( ) )
-            {
-                result = response.Hits.Select( h => h.Source );
-            }
-            return result;
-        }
         #endregion
     }
 }

@@ -21,6 +21,7 @@ namespace Elasticsearch
                         c.DescribeAllEnumsAsStrings(true);
                         c.GroupActionsBy(apiDesc => apiDesc.HttpMethod.ToString());
                         c.IncludeXmlComments(GetXmlCommentsPath());
+                        c.UseFullTypeNameInSchemaIds( );
                     })
                 .EnableSwaggerUi(c =>
                     {

@@ -3,6 +3,7 @@
 aws.config.json
 mapping.json
 quest_migrate.conf
+*.conf
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and

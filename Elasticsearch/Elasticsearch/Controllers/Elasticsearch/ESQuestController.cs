@@ -13,7 +13,7 @@ using WebGrease.Css.Extensions;
 
 namespace Elasticsearch.Controllers
 {
-    [RoutePrefix(("v1/ES"))]
+    [RoutePrefix(("v1/ES/Quest"))]
     public class ESQuestController : ApiController
     {
 
@@ -26,6 +26,7 @@ namespace Elasticsearch.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("Fuzzy")]
+        [ResponseType(typeof(IEnumerable<Models.Quest>))]
         public async Task< IHttpActionResult > SearchFuzzy( string query, int fuzzy )
         {
             var esClient = new ESClient.Client();
@@ -46,6 +47,7 @@ namespace Elasticsearch.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("NonFuzzy")]
+        [ResponseType(typeof(IEnumerable<Models.Quest> ))]
         public async Task< IHttpActionResult > Search( string query )
         {
             var esClient = new ESClient.Client();
@@ -97,10 +99,33 @@ namespace Elasticsearch.Controllers
 
             return Ok( new {count = results.Count( ), data = results} );
         }
+
+        /// <summary>
+        /// Searches quests that have a treasure matching the search text
+        /// </summary>
+        /// <param name="query">Search text</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("Teasure")]
+        [ResponseType(typeof(IEnumerable<Models.Quest>))]
+        public async Task< IHttpActionResult > SearchViaTreasure( string query )
+        {
+            var esClient = new ESClient.Client();
+
+            var results = await esClient.SearchQuestViaTreasure( query );
+            if ( results == null )
+                return NotFound( );
+
+            return Ok(new { count = results.Count(), data = results });
+        }
         #endregion
 
         #region CRUD
 
+        /// <summary>
+        /// Runs the migration from our local database to the elasticsearch index. Builds index and mappings if they do not exist
+        /// </summary>
+        /// <returns></returns>
         [Route( "Migrate" )]
         [HttpPost]
         public async Task< IHttpActionResult > Migrate( )
@@ -144,6 +169,7 @@ namespace Elasticsearch.Controllers
             }
             return Ok( success );
         }
+
         #endregion
     }
 }

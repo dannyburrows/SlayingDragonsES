@@ -234,7 +234,9 @@ namespace Elasticsearch.ESClient
                                     mm.Query( treasureQuery )
                                         .Type( TextQueryType.BestFields )
                                         .Fields( f2 =>
-                                            f2.Field( f3 => f3.Name, 10.00 ).Field( f3 => f3.Description, 2.00 ) )
+                                            f2.Field("treasures.name", 2.00) // dot syntax to access nested
+                                            .Field("treasures.description") // fluent wasn't workig for me
+                                            )
                                     ) ) ) ).Sort( so => so.Ascending( SortSpecialField.Score ) ) );
             if ( response.Hits.Any( ) )
             {

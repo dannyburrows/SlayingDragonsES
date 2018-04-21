@@ -1,0 +1,7 @@
+2018-04-20 16:43:54 - TShock: INFO: TShock was improperly shut down. Please use the exit command in the future to prevent this.
+2018-04-20 16:43:54 - TextLog: INFO: TShock 4.3.25.0 (Mintaka) now running.
+2018-04-20 16:43:54 - TShock: INFO: AutoSave Enabled
+2018-04-20 16:43:54 - TShock: INFO: Backups Disabled
+2018-04-20 16:43:54 - TShock: INFO: Welcome to TShock for Terraria. Initialization complete.
+2018-04-20 16:45:38 - TShock: INFO: A superadmin account has been detected in the user database, but authcode.txt is still present.
+2018-04-20 16:45:38 - TShock: INFO: TShock will now disable the auth system and remove authcode.txt as it is no longer needed.

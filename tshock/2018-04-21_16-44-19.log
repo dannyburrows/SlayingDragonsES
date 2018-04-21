@@ -1,0 +1,708 @@
+2018-04-21 16:44:19 - TShock: INFO: TShock was improperly shut down. Please use the exit command in the future to prevent this.
+2018-04-21 16:44:19 - TextLog: INFO: TShock 4.3.25.0 (Mintaka) now running.
+2018-04-21 16:44:19 - TShock: INFO: AutoSave Enabled
+2018-04-21 16:44:19 - TShock: INFO: Backups Disabled
+2018-04-21 16:44:19 - TShock: INFO: Welcome to TShock for Terraria. Initialization complete.
+2018-04-21 17:30:31 - Utils: INFO: Server executed: /help.
+2018-04-21 17:31:08 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 17:31:08 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 17:31:39 - TextLog: INFO: illi (192.168.1.13) from 'guest' group joined. (1/8)
+2018-04-21 17:31:39 - Utils: INFO: Broadcast: illi has joined.
+2018-04-21 17:31:53 - Utils: INFO: Broadcast: illi has left.
+2018-04-21 17:31:53 - TextLog: INFO: illi disconnected.
+2018-04-21 17:31:53 - Utils: INFO: Broadcast: Saving world. Momentary lag might result from this.
+2018-04-21 17:32:15 - Utils: INFO: Broadcast: World saved.
+2018-04-21 17:32:15 - SaveManager: INFO: World saved at (/home/pi/.local/share/Terraria/Worlds/Omicron_Persei_9.wld)
+2018-04-21 17:36:13 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 17:36:13 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 17:41:18 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 17:41:18 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 17:46:06 - <CheckForUpdatesAsync>d__4: WARNING: UpdateManager warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<ServerIsOutOfDateAsync>d__6.MoveNext () [0x00079] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<UpdateCheckAsync>d__5.MoveNext () [0x00062] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<CheckForUpdatesAsync>d__4.MoveNext () [0x00076] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 17:46:06 - <CheckForUpdatesAsync>d__4: ERROR: Retrying in 5 minutes.
+2018-04-21 17:56:24 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 17:56:24 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:01:29 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:01:29 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:06:34 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:06:34 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:11:39 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:11:39 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:21:44 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:21:44 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:26:49 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:26:49 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:31:54 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:31:54 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:36:59 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:36:59 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 18:42:04 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 18:42:04 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 19:27:10 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 19:27:10 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 19:32:15 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 19:32:15 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:07:21 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:07:21 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:10:30 - TextLog: INFO: MEESTAH MEESTAH disconnected.
+2018-04-21 20:10:31 - TextLog: INFO: MEESTAH MEESTAH (192.168.1.20) from 'guest' group joined. (1/8)
+2018-04-21 20:10:31 - Utils: INFO: Broadcast: MEESTAH MEESTAH has joined.
+2018-04-21 20:10:33 - TextLog: INFO: Seymour (192.168.1.68) from 'guest' group joined. (2/8)
+2018-04-21 20:10:34 - Utils: INFO: Broadcast: Seymour has joined.
+2018-04-21 20:10:45 - TextLog: INFO: illi (192.168.1.13) from 'guest' group joined. (3/8)
+2018-04-21 20:10:45 - Utils: INFO: Broadcast: illi has joined.
+2018-04-21 20:11:45 - Utils: INFO: Broadcast: Seymour has left.
+2018-04-21 20:11:45 - TextLog: INFO: Seymour disconnected.
+2018-04-21 20:11:47 - TextLog: INFO: Seymour (192.168.1.68) from 'guest' group joined. (3/8)
+2018-04-21 20:11:47 - Utils: INFO: Broadcast: Seymour has joined.
+2018-04-21 20:12:26 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:12:26 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:16:03 - TextLog: INFO: Allipoo disconnected.
+2018-04-21 20:16:20 - TextLog: INFO: Allipoo (192.168.1.15) from 'guest' group joined. (4/8)
+2018-04-21 20:16:26 - Utils: INFO: Broadcast: Allipoo has joined.
+2018-04-21 20:17:31 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:17:31 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:17:57 - Utils: INFO: Server executed: /help.
+2018-04-21 20:21:11 - <CheckForUpdatesAsync>d__4: WARNING: UpdateManager warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<ServerIsOutOfDateAsync>d__6.MoveNext () [0x00079] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<UpdateCheckAsync>d__5.MoveNext () [0x00062] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<CheckForUpdatesAsync>d__4.MoveNext () [0x00076] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:21:11 - <CheckForUpdatesAsync>d__4: ERROR: Retrying in 5 minutes.
+2018-04-21 20:25:50 - TextLog: INFO: Desmond (192.168.1.8) from 'guest' group joined. (5/8)
+2018-04-21 20:25:50 - Utils: INFO: Broadcast: Desmond has joined.
+2018-04-21 20:27:36 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:27:36 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:29:01 - Utils: INFO: Broadcast: Saving world. Momentary lag might result from this.
+2018-04-21 20:32:41 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:32:41 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:37:46 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:37:46 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:40:15 - Utils: INFO: Broadcast: Seymour has left.
+2018-04-21 20:40:15 - TextLog: INFO: Seymour disconnected.
+2018-04-21 20:41:39 - TextLog: INFO: Seymour (192.168.1.68) from 'guest' group joined. (5/8)
+2018-04-21 20:41:39 - Utils: INFO: Broadcast: Seymour has joined.
+2018-04-21 20:41:52 - Utils: INFO: Broadcast: Seymour has left.
+2018-04-21 20:41:52 - TextLog: INFO: Seymour disconnected.
+2018-04-21 20:42:32 - TextLog: INFO: Seymour (192.168.1.68) from 'guest' group joined. (5/8)
+2018-04-21 20:42:32 - Utils: INFO: Broadcast: Seymour has joined.
+2018-04-21 20:42:51 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:42:52 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:47:57 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:47:57 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:53:02 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:53:02 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 20:56:17 - <CheckForUpdatesAsync>d__4: WARNING: UpdateManager warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<ServerIsOutOfDateAsync>d__6.MoveNext () [0x00079] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<UpdateCheckAsync>d__5.MoveNext () [0x00062] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<CheckForUpdatesAsync>d__4.MoveNext () [0x00076] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 20:56:17 - <CheckForUpdatesAsync>d__4: ERROR: Retrying in 5 minutes.
+2018-04-21 20:57:22 - Utils: INFO: Broadcast: Saving world. Momentary lag might result from this.
+2018-04-21 21:01:22 - <CheckForUpdatesAsync>d__4: WARNING: UpdateManager warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<ServerIsOutOfDateAsync>d__6.MoveNext () [0x00079] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<UpdateCheckAsync>d__5.MoveNext () [0x00062] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.UpdateManager+<CheckForUpdatesAsync>d__4.MoveNext () [0x00076] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 21:01:22 - <CheckForUpdatesAsync>d__4: ERROR: Retrying in 5 minutes.
+2018-04-21 21:03:07 - <SendUpdateAsync>d__9: WARNING: StatTracker warning: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x00026] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClientHandler+<SendAsync>d__64.MoveNext () [0x004f5] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1+ConfiguredTaskAwaiter[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Net.Http.HttpClient+<SendAsyncWorker>d__47.MoveNext () [0x000ca] in <85fadf4231b24cdfb8d542afa7dc28fb>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0001a] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at TShockAPI.StatTracker+<SendUpdateAsync>d__9.MoveNext () [0x00094] in <ee5ce75026b74995a03fdbd3cc824395>:0 
+2018-04-21 21:03:07 - <SendUpdateAsync>d__9: ERROR: Retrying in 5 minutes.
+2018-04-21 21:20:16 - TextLog: INFO: tishowens (192.168.1.21) from 'guest' group joined. (6/8)
+2018-04-21 21:20:16 - Utils: INFO: Broadcast: tishowens has joined.
+2018-04-21 21:28:46 - Utils: INFO: Broadcast: Saving world. Momentary lag might result from this.
+2018-04-21 21:30:14 - TShock: ERROR: System.OutOfMemoryException: Out of memory
+  at (wrapper alloc) System.Object.AllocVector(intptr,intptr)
+  at System.IO.MemoryStream.set_Capacity (System.Int32 value) [0x00057] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.IO.MemoryStream.EnsureCapacity (System.Int32 value) [0x00061] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.IO.MemoryStream.Write (System.Byte[] buffer, System.Int32 offset, System.Int32 count) [0x000b3] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.IO.BinaryWriter.Write (System.Byte[] buffer, System.Int32 index, System.Int32 count) [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at Terraria.IO.WorldFile.SaveWorldTiles (System.IO.BinaryWriter writer) [0x003bc] in <788df755de55431ab5a8cb189729ff2f>:0 
+  at Terraria.IO.WorldFile.SaveWorld_Version2 (System.IO.BinaryWriter writer) [0x0001a] in <788df755de55431ab5a8cb189729ff2f>:0 
+  at Terraria.IO.WorldFile.saveWorldDirect (System.Boolean useCloudSaving, System.Boolean resetTime) [0x000c5] in <788df755de55431ab5a8cb189729ff2f>:0 
+  at Terraria.IO.WorldFile.saveWorld (System.Boolean useCloudSaving, System.Boolean resetTime) [0x00010] in <788df755de55431ab5a8cb189729ff2f>:0 
+  at Terraria.IO.WorldFile.saveWorld () [0x00000] in <788df755de55431ab5a8cb189729ff2f>:0 
+  at Terraria.WorldGen.saveAndPlayCallBack (System.Object threadContext) [0x00000] in <788df755de55431ab5a8cb189729ff2f>:0 
+  at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context (System.Object state) [0x00007] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00071] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem () [0x00021] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00074] in <65984520577646ec9044386ec4a7b3dd>:0 
+  at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback () [0x00000] in <65984520577646ec9044386ec4a7b3dd>:0 
+2018-04-21 21:30:15 - Utils: INFO: Broadcast: Saving world. Momentary lag might result from this.
+2018-04-21 21:30:15 - Utils: INFO: Broadcast: World saved.
+2018-04-21 21:30:15 - SaveManager: INFO: World saved at (/home/pi/.local/share/Terraria/Worlds/Omicron_Persei_9.wld.crash)

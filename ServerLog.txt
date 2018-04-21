@@ -1,0 +1,42 @@
+[04/20/18 06:24:53] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/20/18 06:24:53] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/20/18 06:24:53] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/20/18 06:24:53] [Server API] Verbose: 	Mono: True
+[04/20/18 06:24:56] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
+[04/20/18 06:41:59] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/20/18 06:41:59] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/20/18 06:41:59] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/20/18 06:41:59] [Server API] Verbose: 	Mono: True
+[04/20/18 06:42:02] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
+[04/20/18 16:43:53] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/20/18 16:43:53] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/20/18 16:43:53] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/20/18 16:43:53] [Server API] Verbose: 	Mono: True
+[04/20/18 16:43:54] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
+[04/20/18 21:19:39] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/20/18 21:19:39] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/20/18 21:19:39] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/20/18 21:19:39] [Server API] Verbose: 	Mono: True
+[04/20/18 21:19:40] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
+[04/20/18 22:26:03] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/20/18 22:26:04] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/20/18 22:26:04] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/20/18 22:26:04] [Server API] Verbose: 	Mono: True
+[04/20/18 22:26:06] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
+[04/21/18 16:44:18] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/21/18 16:44:18] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/21/18 16:44:18] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/21/18 16:44:18] [Server API] Verbose: 	Mono: True
+[04/21/18 16:44:19] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
+[04/21/18 21:28:55] [Server API] Error: ===================================================================================
+[04/21/18 21:28:55] [Server API] Error: An unhandled exception has occured in TSAPI, and a crash report will be generated
+[04/21/18 21:28:55] [Server API] Error: Generating a crash report, please wait...
+[04/21/18 21:30:14] [Server API] Error: Crash report saved at crash_131688197918463050.zip
+[04/21/18 21:30:14] [Server API] Error: Please upload the crash file and report it at http://tshock.co/
+[04/21/18 21:30:14] [Server API] Error: The process will terminate.
+[04/21/18 21:30:14] [Server API] Error: ===================================================================================
+[04/21/18 21:30:26] [Server API] Verbose: TerrariaApi - Server v2.1.0.0 started.
+[04/21/18 21:30:26] [Server API] Verbose: 	Command line: /home/pi/Terraria/TerrariaServer.exe
+[04/21/18 21:30:26] [Server API] Verbose: 	OS: Unix 4.14.34.7 (64bit: False)
+[04/21/18 21:30:26] [Server API] Verbose: 	Mono: True
+[04/21/18 21:30:27] [Server API] Info: Plugin TShock v4.3.25.0 (by The TShock Team) initiated.
